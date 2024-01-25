@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Example with a query string to force cache refresh -->
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css?v=1.0">
+
+    <link rel="icon" href="assets/imges/logobeige(7).png">
+    <meta name="description" content="agancy ">
+
+    <title>WOMENINVOLUME</title>
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sen:wght@400;700;800&display=swap" rel="stylesheet">
+    <!-- aos -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <!-- custom style -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <style>
+
+
+        /* [data-toggle="collapse"] {
+            color: #870a10; 
+            font-family: 'Dancing Script', cursive;
+            display: flex;
+            justify-content: space-between; 
+            align-items: center; 
+        } */
+        .nav__link {
+        color: #870a10;
+        }
+
+        /* Custom styles for .card-body */
+        .card-body {
+            background-color: #faf8ec; 
+            color: #000000; 
+            font-family: 'Raleway', sans-serif;
+        }
+
+        /* Custom style for the icon */
+        /* .collapse-toggle-icon {
+            max-width: 24px; 
+            margin-left: 10px; 
+        } */
+
+      /* Add your existing styles here */
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #F4F4F4;
+      }
+      .Talent {
+        text-align: center;
+        padding: 20px;
+      }
+      .box-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly; /* Adjusted to space-evenly */
+        margin-top: 20px;
+      }
+
+
+      .box {
+        position: relative;
+        overflow: hidden;
+        width: 350px; 
+        margin: 20px;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        transition: 0.3s;
+      }
+      .image {
+        position: relative;
+        overflow: hidden;
+        border-radius: 10px 10px 0 0;
+      }
+      .image img {
+        width: 100%;
+        height: auto;
+        display: block;
+      }
+      .box-bottom {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        background: rgba(226, 227, 222, 0.7);
+        color: #870a10;
+        padding: 0px;
+        box-sizing: border-box;
+        /* transition: 0.3s; */
+        opacity: 1; /* Show the box-bottom by default */
+        overflow: hidden; /* Hide overflowing description initially */
+        height: 30px; /* Set an initial height */
+      }
+      .box:hover .box-bottom {
+        height: auto; /* Expand height on hover to reveal full description */
+      }
+      .info {
+        text-align: center;
+      }
+      .Nama {
+        font-size: 1.2em;
+        margin-bottom: 1px;
+        display: block;
+      }
+      /* .description {
+        font-size: 0.9em;
+        line-height: 1.4;
+      } */
+    
+    </style>       
+</head>
+
+<body>
+    <!-- header >> nav  -->
+    <header id="navBar">
+        <nav class=" align-items-center  ">
+            <div class="logo">
+                <a class="navbar--logo fw-bolder fs-5 mainColor" href="#">WOMENINVOLUME</a>
+            </div>
+            <div id="LinksList" class="Links--list ">
+                <a class="link" href="index.html">Home</a>
+                <a class="link" href="index.html#impact">Impact</a>
+                <a class="link" href="#talent">Talents</a>
+                <a class="link" href="index.html#services">Services</a>
+                <a class="buttom mainBg text-white shadow-none" href="index.html#contact">Contact us</a>
+            </div>
+            <div id="toggleMenu" class="toggle-menu">
+                <span class="rounded-5"></span>
+                <span class="rounded-5"></span>
+                <span class="rounded-5"></span>
+            </div>
+        </nav>
+
+    </header>
+
+    <section class=" mockup--section mt-5 overflow-hidden " id="talent">
+        <div class="container">
+            <div class="box-container">
+                <div class="box">
+                    <div class="image">
+                        <img src="COMPRESSED/Alfia-min.jpg" alt="">
+                    </div>
+                    <div class="box-bottom">
+                        <div class="info">
+                            <b class="Nama">Alifia</b>
+                            <!-- <span class="description">Cool cat Alifia is loving, calm and everything you could ever ask for in a friend </span> -->
+                        </div>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="image">
+                        <img src="COMPRESSED/Allya-min.jpg" alt="">
+                    </div>
+                    <div class="box-bottom">
+                        <div class="info">
+                            <b class="Nama">Allya</b>
+                            <!-- <span class="description">Chill, loving, and extroverted, Alyya’s presence radiates positivity and warmth. </span> -->
+                        </div>
+                    </div>
+                </div>
+                  <!-- Repeat the box element for each talent -->
+                  <div class="box">
+                      <div class="image">
+                          <img src="COMPRESSED/Balqis Neysa.jpg" alt="">
+                      </div>
+                      <div class="box-bottom">
+                          <div class="info">
+                              <b class="Nama">Balqis Neysa</b>
+                              <!-- <span class="description">Adventurous, seeking solitude, and with a big heart, Balqis embraces all of life's journey </span> -->
+                          </div>
+                      </div>
+                  </div>
+                  <!-- Add two more similar .box elements here for a total of three in a row -->
+                  <div class="box">
+                      <div class="image">
+                          <img src="COMPRESSED/Britney Alexandra.jpg" alt="">
+                      </div>
+                      <div class="box-bottom">
+                          <div class="info">
+                              <b class="Nama">Britney Alexandra</b>
+                              <!-- <span class="description">Calm, introverted, and chill... This isnt the bold and audacious Britney that we all know and love from the 2000s, but still a Britney to look out for</span> -->
+                          </div>
+                      </div>
+                  </div>
+                  <div class="box">
+                      <div class="image">
+                          <img src="COMPRESSED/Bulan Maria.jpg" alt="">
+                      </div>
+                      <div class="box-bottom">
+                          <div class="info">
+                              <b class="Nama">Bulan Maria</b>
+                              <!-- <span class="description">Ambitious and driven, Bulan never fails to set her sights high</span> -->
+                          </div>
+                      </div>
+                  </div>
+                  <div class="box">
+                      <div class="image">
+                          <img src="COMPRESSED/Chlowie-min.jpg" alt="">
+                      </div>
+                      <div class="box-bottom">
+                          <div class="info">
+                              <b class="Nama">Chlowie</b>
+                              <!-- <span class="description">Chill, loving, and extroverted, Chlowie's presence radiates positivity and warmth</span> -->
+                          </div>
+                      </div>
+                  </div>
+          <!-- Talent 5-8 -->
+                  <div class="box">
+                    <div class="image">
+                        <img src="COMPRESSED/Emirah.jpg" alt="">
+                    </div>
+                    <div class="box-bottom">
+                        <div class="info">
+                            <b class="Nama">Emirah Khansa</b>
+                            <!-- <span class="description">There's always enough kindness to go around, and that is something our sweet, courageous Emirah lives by!</span> -->
+                        </div>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="image">
+                        <img src="COMPRESSED/Gabriella Karunia.jpg" alt="">
+                    </div>
+                    <div class="box-bottom">
+                        <div class="info">
+                            <b class="Nama">Gabriella Kurnia</b>
+                            <!-- <span class="description">Just like her name, Gabriella is an angel and will be there for you when you need her</span> -->
+                        </div>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="image">
+                        <img src="COMPRESSED/Hayatul Syamila.jpg" alt="">
+                    </div>
+                    <div class="box-bottom">
+                        <div class="info">
+                            <b class="Nama">Hayatul Syamila</b>
+                            <!-- <span class="description">Generous, loving, and ever cheerful, Mila spreads warmth wherever she goes</span> -->
+                        </div>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="image">
+                        <img src="COMPRESSED/Jessica.jpg" alt="">
+                    </div>
+                    <div class="box-bottom">
+                        <div class="info">
+                            <b class="Nama">Jessica Gabriella </b>
+                            <!-- <span class="description">Chill vibes and bright ideas define Jessica's personality. Oh, did we mention she's ambitious too?</span> -->
+                        </div>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="image">
+                        <img src="COMPRESSED/Kayla-min.jpg" alt="">
+                    </div>
+                    <div class="box-bottom">
+                        <div class="info">
+                            <b class="Nama">Kayla Shabia</b>
+                            <!-- <span class="description">Kayla is an art student filled with lots of ideas, even in most rushed and spontaneous moments.</span> -->
+                        </div>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="image">
+                        <img src="COMPRESSED/Maudy Sausan-min.jpg"">
+                    </div>
+                    <div class="box-bottom">
+                        <div class="info">
+                            <b class="Nama">Maudy Sausan</b>
+                            <!-- <span class="description">Maudy moves through the world with her warm smile and girl-next-door persona</span> -->
+                        </div>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="image">
+                        <img src="COMPRESSED/Nada-min.jpg" alt="">
+                    </div>
+                    <div class="box-bottom">
+                        <div class="info">
+                            <b class="Nama">Nada Salsabila</b>
+                            <!-- <span class="description">Nada is a full-time copywriter, cat mama and content-creator. The embodiment of an It Girl, there isn't many people who are as cool as she is!</span> -->
+                        </div>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="image">
+                        <img src="COMPRESSED/Savana Qnar-min.jpg" alt="">
+                    </div>
+                    <div class="box-bottom">
+                        <div class="info">
+                            <b class="Nama">Savana Qnar </b>
+                            <!-- <span class="description">Extroverted and generous, Nai lights up the room with her cheerful spirit</span> -->
+                        </div>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="image">
+                        <img src="./COMPRESSED/Najwa.jpg" alt="">
+                    </div>
+                    <div class="box-bottom">
+                        <div class="info">
+                            <b class="Nama">Najwa Chairunnisa</b>
+                            <!-- <span class="description">Ambitious, courageous, and reliable, Najwa fearlessly pursues her goals with determination.</span> -->
+                        </div>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="image">
+                        <img src="COMPRESSED/Salma.jpg" alt="">
+                    </div>
+                    <div class="box-bottom">
+                        <div class="info">
+                            <b class="Nama">Salma Puti Khairunnisa</b>
+                            <!-- <span class="description">Careful, funny, and big-hearted, Salma brings laughter and kindness to every moment</span> -->
+                        </div>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="image">
+                        <img src="COMPRESSED/Salsa.jpg" alt="">
+                    </div>
+                    <div class="box-bottom">
+                        <div class="info">
+                            <b class="Nama">Salsabila Firsia</b>
+                            <!-- <span class="description">A bold and fierce girl who loves to post slice of life contents, beauty and travel</span> -->
+                        </div>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="image">
+                        <img src="COMPRESSED/Sheren.jpg" alt="">
+                    </div>
+                    <div class="box-bottom">
+                        <div class="info">
+                            <b class="Nama">Sheren Stepa Novita Putri</b>
+                            <!-- <span class="description">"Cheerful, ambitious, and bursting with energy, Sheren brings joy to every project</span> -->
+                        </div>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="image">
+                        <img src="COMPRESSED/Ulfa.jpg" alt="">
+                    </div>
+                    <div class="box-bottom">
+                        <div class="info">
+                            <b class="Nama">Ulfa Zakia</b>
+                            <!-- <span class="description">"Kind, friendly, and cheerful Ulfa is a full-time learner who loves pretty things!</span> -->
+                        </div>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="image">
+                        <img src="COMPRESSED/Yessica.jpg" alt="">
+                    </div>
+                    <div class="box-bottom">
+                        <div class="info">
+                            <b class="Nama">Yessica Karen</b>
+                            <!-- <span class="description">"Having a soft and elegant personality, Yessica infuses her daily life with a cheerful touch of grace</span> -->
+                        </div>
+                    </div>
+                </div>
+              </div>
+              </div>
+    </section>
+    <footer>
+        <div class="footer py-5" id="contact">
+            <div class="py-1 text-center container mb-4" data-aos="zoom-in" data-aos-duration="500">
+                <a href="index.html/#contact" class="buttom mt-3 mainBg px-3 py-2 text-white ">Reach Us</a>
+            </div>
+        </div>
+    </footer>
+        
+           
+    <!-- // footer end-->
+
+    <!--loding screen -->
+    <div id="loading" class="lodingsscren ">
+        <div class="boxes">
+            <div class="box ">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+            <div class="box">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+            <div class="box">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+            <div class="box">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+        </div>
+    </div>
+    <!-- scroll btn  -->
+    <div id="scrollTopBtn">
+        <img src="assets/imges/arrowUp.svg" loading="lazy" alt="arrowUp">
+    </div>
+
+    <!-- jquery -->
+    <script src="assets/scripts/jquery.js"></script>
+    <!-- Aos -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <!-- bootstrap -->
+    <script src="assets/scripts/bootstrap.bundle.min.js"></script>
+    <!-- custom js -->
+
+    <script src="assets/scripts/script.js"></script>
+</body>
+
+</html>
